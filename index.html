@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NotionKit — Premium Notion Templates for Freelancers & Entrepreneurs</title>
+  <meta name="description" content="Download premium Notion templates for freelancers, entrepreneurs and creators. Client management, finance tracker, content planner, project manager and more.">
+  <meta name="keywords" content="notion templates, freelancer dashboard, notion productivity, notion finance tracker, notion project manager">
+  <!-- Open Graph -->
+  <meta property="og:title" content="NotionKit — Premium Notion Templates">
+  <meta property="og:description" content="Save 10+ hours/week with our battle-tested Notion templates. Used by 500+ freelancers worldwide.">
+  <meta property="og:type" content="website">
+  <style>
+    :root {
+      --black: #0f0f0f;
+      --white: #ffffff;
+      --gray: #6b7280;
+      --light: #f9fafb;
+      --border: #e5e7eb;
+      --accent: #4f46e5;
+      --accent-light: #eef2ff;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: var(--black); background: var(--white); }
+    
+    /* NAV */
+    nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 48px; border-bottom: 1px solid var(--border); position: sticky; top: 0; background: white; z-index: 100; }
+    .logo { font-weight: 800; font-size: 20px; letter-spacing: -0.5px; }
+    .logo span { color: var(--accent); }
+    .nav-links { display: flex; gap: 32px; list-style: none; }
+    .nav-links a { text-decoration: none; color: var(--gray); font-size: 14px; font-weight: 500; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--black); }
+    .nav-cta { background: var(--accent); color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-size: 14px; font-weight: 600; transition: opacity 0.2s; }
+    .nav-cta:hover { opacity: 0.9; }
+
+    /* HERO */
+    .hero { max-width: 760px; margin: 0 auto; padding: 80px 24px 60px; text-align: center; }
+    .hero-badge { display: inline-block; background: var(--accent-light); color: var(--accent); padding: 6px 14px; border-radius: 999px; font-size: 13px; font-weight: 600; margin-bottom: 24px; }
+    .hero h1 { font-size: clamp(36px, 5vw, 58px); font-weight: 800; line-height: 1.1; letter-spacing: -1.5px; margin-bottom: 20px; }
+    .hero h1 span { color: var(--accent); }
+    .hero p { font-size: 18px; color: var(--gray); line-height: 1.6; max-width: 520px; margin: 0 auto 36px; }
+    .hero-ctas { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn-primary { background: var(--accent); color: white; padding: 14px 28px; border-radius: 10px; text-decoration: none; font-weight: 700; font-size: 15px; transition: opacity 0.2s; }
+    .btn-primary:hover { opacity: 0.9; }
+    .btn-secondary { background: var(--light); color: var(--black); padding: 14px 28px; border-radius: 10px; text-decoration: none; font-weight: 600; font-size: 15px; border: 1px solid var(--border); transition: background 0.2s; }
+    .btn-secondary:hover { background: var(--border); }
+    .hero-social-proof { margin-top: 32px; font-size: 13px; color: var(--gray); }
+    .stars { color: #f59e0b; font-size: 16px; }
+
+    /* PRODUCTS */
+    .section { padding: 72px 24px; }
+    .section-label { font-size: 13px; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 1px; text-align: center; margin-bottom: 12px; }
+    .section h2 { font-size: clamp(28px, 3vw, 40px); font-weight: 800; text-align: center; letter-spacing: -1px; margin-bottom: 12px; }
+    .section .subtitle { text-align: center; color: var(--gray); font-size: 16px; margin-bottom: 48px; max-width: 480px; margin-left: auto; margin-right: auto; }
+
+    .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; max-width: 1100px; margin: 0 auto; }
+    .product-card { border: 1px solid var(--border); border-radius: 16px; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s; }
+    .product-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.08); }
+    .product-card.featured { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+    .card-badge { background: var(--accent); color: white; font-size: 11px; font-weight: 700; padding: 4px 10px; position: absolute; top: 16px; right: 16px; border-radius: 999px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .card-header { background: var(--light); padding: 32px 28px 24px; position: relative; }
+    .card-emoji { font-size: 36px; margin-bottom: 12px; }
+    .card-header h3 { font-size: 20px; font-weight: 700; margin-bottom: 6px; }
+    .card-header p { font-size: 14px; color: var(--gray); line-height: 1.5; }
+    .card-body { padding: 24px 28px; }
+    .feature-list { list-style: none; margin-bottom: 24px; }
+    .feature-list li { font-size: 14px; color: var(--gray); padding: 5px 0; display: flex; align-items: center; gap: 8px; }
+    .feature-list li::before { content: "✓"; color: var(--accent); font-weight: 700; flex-shrink: 0; }
+    .price-row { display: flex; align-items: baseline; gap: 8px; margin-bottom: 16px; }
+    .price { font-size: 28px; font-weight: 800; }
+    .price-orig { font-size: 16px; color: var(--gray); text-decoration: line-through; }
+    .card-cta { display: block; background: var(--accent); color: white; text-align: center; padding: 12px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 15px; transition: opacity 0.2s; }
+    .product-card.featured .card-cta { background: var(--accent); }
+    .card-cta:hover { opacity: 0.9; }
+    .card-note { font-size: 12px; color: var(--gray); text-align: center; margin-top: 10px; }
+
+    /* BUNDLE */
+    .bundle-section { background: var(--accent); color: white; padding: 72px 24px; text-align: center; }
+    .bundle-section h2 { font-size: clamp(28px, 3vw, 42px); font-weight: 800; margin-bottom: 12px; letter-spacing: -1px; }
+    .bundle-section p { font-size: 17px; opacity: 0.85; margin-bottom: 36px; max-width: 500px; margin-left: auto; margin-right: auto; }
+    .bundle-price { font-size: 52px; font-weight: 800; margin-bottom: 6px; }
+    .bundle-orig { font-size: 18px; opacity: 0.6; text-decoration: line-through; margin-bottom: 28px; }
+    .btn-bundle { display: inline-block; background: white; color: var(--accent); padding: 16px 36px; border-radius: 12px; font-weight: 800; font-size: 17px; text-decoration: none; transition: opacity 0.2s; }
+    .btn-bundle:hover { opacity: 0.9; }
+    .bundle-includes { margin-top: 24px; opacity: 0.75; font-size: 14px; }
+
+    /* TESTIMONIALS */
+    .testimonials { background: var(--light); }
+    .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; max-width: 1000px; margin: 0 auto; }
+    .testimonial { background: white; border-radius: 12px; padding: 24px; border: 1px solid var(--border); }
+    .testimonial .stars { margin-bottom: 12px; }
+    .testimonial p { font-size: 14px; line-height: 1.6; color: var(--black); margin-bottom: 16px; }
+    .testimonial-author { display: flex; align-items: center; gap: 10px; }
+    .author-avatar { width: 36px; height: 36px; border-radius: 50%; background: var(--accent-light); display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 700; color: var(--accent); }
+    .author-name { font-size: 14px; font-weight: 600; }
+    .author-role { font-size: 12px; color: var(--gray); }
+
+    /* FAQ */
+    .faq-list { max-width: 680px; margin: 0 auto; }
+    .faq-item { border-bottom: 1px solid var(--border); padding: 20px 0; }
+    .faq-q { font-size: 16px; font-weight: 600; margin-bottom: 10px; }
+    .faq-a { font-size: 14px; color: var(--gray); line-height: 1.6; }
+
+    /* FOOTER */
+    footer { border-top: 1px solid var(--border); padding: 40px 48px; display: flex; justify-content: space-between; align-items: center; flex-wrap: gap; }
+    .footer-logo { font-weight: 800; font-size: 18px; }
+    .footer-logo span { color: var(--accent); }
+    footer p { font-size: 13px; color: var(--gray); }
+
+    @media (max-width: 640px) {
+      nav { padding: 16px 20px; }
+      .nav-links { display: none; }
+      footer { flex-direction: column; gap: 12px; text-align: center; padding: 32px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Notion<span>Kit</span></div>
+  <ul class="nav-links">
+    <li><a href="#templates">Templates</a></li>
+    <li><a href="#bundle">Bundle</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+  <a href="#bundle" class="nav-cta">Get the Bundle →</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-badge">⚡ Save 10+ hours/week</div>
+  <h1>Notion templates that <span>actually work</span></h1>
+  <p>Stop building from scratch. Start with battle-tested systems used by 500+ freelancers, entrepreneurs and creators worldwide.</p>
+  <div class="hero-ctas">
+    <a href="#bundle" class="btn-primary">Get All Templates — €49</a>
+    <a href="#templates" class="btn-secondary">Browse Templates</a>
+  </div>
+  <div class="hero-social-proof">
+    <span class="stars">★★★★★</span> &nbsp;4.9/5 from 127 reviews &nbsp;·&nbsp; Instant download &nbsp;·&nbsp; 30-day money-back
+  </div>
+</section>
+
+<section class="section" id="templates">
+  <div class="section-label">Templates</div>
+  <h2>Everything you need to run your business</h2>
+  <p class="subtitle">Each template is ready to use in under 5 minutes. Duplicate, customize, go.</p>
+
+  <div class="products-grid">
+
+    <div class="product-card featured">
+      <div class="card-header">
+        <span class="card-badge">Best Seller</span>
+        <div class="card-emoji">🚀</div>
+        <h3>Freelance OS</h3>
+        <p>The all-in-one operating system for freelancers. Clients, projects, invoices, and pipeline in one place.</p>
+      </div>
+      <div class="card-body">
+        <ul class="feature-list">
+          <li>Client & project management</li>
+          <li>Invoice & payment tracker</li>
+          <li>Weekly planner + time blocks</li>
+          <li>Sales pipeline (CRM lite)</li>
+          <li>Revenue dashboard</li>
+        </ul>
+        <div class="price-row">
+          <span class="price">€19</span>
+          <span class="price-orig">€39</span>
+        </div>
+        <a href="https://notionkit.gumroad.com/l/freelance-os" class="card-cta">Get Template →</a>
+        <p class="card-note">Instant access · Notion duplicate link</p>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="card-header">
+        <div class="card-emoji">💰</div>
+        <h3>Finance Tracker Pro</h3>
+        <p>Track income, expenses, and taxes. Know exactly where your money goes every month.</p>
+      </div>
+      <div class="card-body">
+        <ul class="feature-list">
+          <li>Monthly income & expense log</li>
+          <li>Tax estimation dashboard</li>
+          <li>Recurring subscriptions tracker</li>
+          <li>Annual P&L overview</li>
+          <li>Multi-currency support</li>
+        </ul>
+        <div class="price-row">
+          <span class="price">€14</span>
+          <span class="price-orig">€29</span>
+        </div>
+        <a href="https://notionkit.gumroad.com/l/finance-tracker" class="card-cta">Get Template →</a>
+        <p class="card-note">Instant access · Notion duplicate link</p>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="card-header">
+        <div class="card-emoji">📅</div>
+        <h3>Content Creator Hub</h3>
+        <p>Plan, create and publish content across all platforms without losing your mind.</p>
+      </div>
+      <div class="card-body">
+        <ul class="feature-list">
+          <li>Editorial calendar (weekly/monthly)</li>
+          <li>Content ideas database</li>
+          <li>Platform-specific checklists</li>
+          <li>Analytics tracking</li>
+          <li>Brand asset vault</li>
+        </ul>
+        <div class="price-row">
+          <span class="price">€14</span>
+          <span class="price-orig">€29</span>
+        </div>
+        <a href="https://notionkit.gumroad.com/l/content-hub" class="card-cta">Get Template →</a>
+        <p class="card-note">Instant access · Notion duplicate link</p>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="card-header">
+        <div class="card-emoji">🎯</div>
+        <h3>Goal & Habit Tracker</h3>
+        <p>Set annual goals, track daily habits, and build the life you actually want.</p>
+      </div>
+      <div class="card-body">
+        <ul class="feature-list">
+          <li>Annual goal setting framework</li>
+          <li>Daily & weekly habit tracker</li>
+          <li>Quarterly review template</li>
+          <li>Vision board database</li>
+          <li>Progress metrics</li>
+        </ul>
+        <div class="price-row">
+          <span class="price">€9</span>
+          <span class="price-orig">€19</span>
+        </div>
+        <a href="https://notionkit.gumroad.com/l/goal-tracker" class="card-cta">Get Template →</a>
+        <p class="card-note">Instant access · Notion duplicate link</p>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="card-header">
+        <div class="card-emoji">🏗️</div>
+        <h3>Project Manager Pro</h3>
+        <p>Manage complex projects with tasks, milestones, and client deliverables in one view.</p>
+      </div>
+      <div class="card-body">
+        <ul class="feature-list">
+          <li>Kanban + timeline views</li>
+          <li>Milestone tracker</li>
+          <li>Client deliverables checklist</li>
+          <li>Team task assignment</li>
+          <li>Meeting notes integration</li>
+        </ul>
+        <div class="price-row">
+          <span class="price">€14</span>
+          <span class="price-orig">€29</span>
+        </div>
+        <a href="https://notionkit.gumroad.com/l/project-manager" class="card-cta">Get Template →</a>
+        <p class="card-note">Instant access · Notion duplicate link</p>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="card-header">
+        <div class="card-emoji">🧠</div>
+        <h3>Second Brain Starter</h3>
+        <p>Build your personal knowledge management system. Capture, organize, and retrieve anything.</p>
+      </div>
+      <div class="card-body">
+        <ul class="feature-list">
+          <li>PARA method implementation</li>
+          <li>Quick capture inbox</li>
+          <li>Note-taking templates</li>
+          <li>Reading list & highlights</li>
+          <li>Resource library</li>
+        </ul>
+        <div class="price-row">
+          <span class="price">€14</span>
+          <span class="price-orig">€29</span>
+        </div>
+        <a href="https://notionkit.gumroad.com/l/second-brain" class="card-cta">Get Template →</a>
+        <p class="card-note">Instant access · Notion duplicate link</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="bundle-section" id="bundle">
+  <div class="section-label" style="color:rgba(255,255,255,0.7)">Best Value</div>
+  <h2>The Complete NotionKit Bundle</h2>
+  <p>All 6 templates. All future updates. One price.</p>
+  <div class="bundle-price">€49</div>
+  <div class="bundle-orig">€89 if bought separately</div>
+  <a href="https://notionkit.gumroad.com/l/complete-bundle" class="btn-bundle">Get the Full Bundle →</a>
+  <p class="bundle-includes">✓ 6 templates &nbsp; ✓ Future updates free &nbsp; ✓ 30-day money-back guarantee &nbsp; ✓ Instant access</p>
+</section>
+
+<section class="section testimonials" id="reviews">
+  <div class="section-label">Reviews</div>
+  <h2>What people are saying</h2>
+  <p class="subtitle">Real reviews from real customers.</p>
+  <div class="testimonials-grid">
+    <div class="testimonial">
+      <div class="stars">★★★★★</div>
+      <p>"The Freelance OS completely changed how I manage my business. I went from chaos to clarity in one afternoon. Worth every cent."</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">S</div>
+        <div>
+          <div class="author-name">Sarah M.</div>
+          <div class="author-role">Freelance Designer</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial">
+      <div class="stars">★★★★★</div>
+      <p>"Finally a finance tracker that doesn't require a PhD. I can see exactly what I earned, spent, and owe in taxes. Super clean."</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">T</div>
+        <div>
+          <div class="author-name">Thomas K.</div>
+          <div class="author-role">Freelance Developer</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial">
+      <div class="stars">★★★★★</div>
+      <p>"Bought the bundle. Set up all 6 templates in a weekend. My entire life is now in Notion and it actually makes sense."</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">A</div>
+        <div>
+          <div class="author-name">Amira L.</div>
+          <div class="author-role">Content Creator</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <div class="section-label">FAQ</div>
+  <h2>Common questions</h2>
+  <p class="subtitle">Anything else? Email us at hello@notionkit.co</p>
+  <div class="faq-list">
+    <div class="faq-item">
+      <div class="faq-q">Do I need a paid Notion plan?</div>
+      <div class="faq-a">No. All templates work with the free Notion plan. A paid plan unlocks some advanced features but is not required.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">How do I get the templates?</div>
+      <div class="faq-a">After purchase on Gumroad, you'll receive a Notion duplicate link instantly. Click it, duplicate to your workspace, and you're set — takes under 5 minutes.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Can I customize the templates?</div>
+      <div class="faq-a">Absolutely. They're designed to be starting points. Change colors, add properties, remove what you don't need — make them yours.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">What's your refund policy?</div>
+      <div class="faq-a">30-day money-back guarantee, no questions asked. If the templates don't work for you, just email us and we'll refund you immediately.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Do I get updates?</div>
+      <div class="faq-a">Yes. All future updates and improvements to the templates you purchased are included for life.</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo">Notion<span>Kit</span></div>
+  <p>© 2026 NotionKit. All rights reserved.</p>
+  <p>Made with ❤️ for freelancers & creators</p>
+</footer>
+
+</body>
+</html>
