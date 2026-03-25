@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kcceu.github.io/notion-templates-store/sitemap.xml
