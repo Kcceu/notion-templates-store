@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Manage Freelance Clients in Notion (Free Template Included)</title>
+  <meta name="description" content="Step-by-step guide to managing freelance clients in Notion. Includes a free client CRM template, invoice tracker, and pipeline system.">
+  <meta name="keywords" content="notion client management, freelance crm notion, notion invoice tracker, manage clients notion, notion freelance template free">
+  <link rel="canonical" href="https://kcceu.github.io/notion-templates-store/blog/manage-freelance-clients-notion.html">
+  <style>
+    body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;max-width:760px;margin:0 auto;padding:40px 24px;color:#111;line-height:1.7}
+    h1{font-size:clamp(28px,4vw,44px);font-weight:800;line-height:1.2;margin-bottom:16px;letter-spacing:-1px}
+    h2{font-size:24px;font-weight:700;margin:48px 0 12px}
+    h3{font-size:18px;font-weight:600;margin:32px 0 8px}
+    p{margin:0 0 16px;color:#374151}
+    a{color:#4f46e5;text-decoration:none}
+    a:hover{text-decoration:underline}
+    .meta{color:#9ca3af;font-size:14px;margin-bottom:40px}
+    .highlight{background:#eef2ff;border-left:4px solid #4f46e5;padding:16px 20px;border-radius:0 8px 8px 0;margin:24px 0}
+    .step{background:#f9fafb;border-radius:12px;padding:24px;margin:20px 0;border:1px solid #e5e7eb}
+    .step-num{background:#4f46e5;color:white;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;margin-bottom:12px}
+    .cta-box{background:#4f46e5;color:white;padding:32px;border-radius:16px;text-align:center;margin:48px 0}
+    .cta-box h3{color:white;margin:0 0 8px}
+    .cta-box p{color:rgba(255,255,255,.85);margin:0 0 20px}
+    .cta-btn{display:inline-block;background:white;color:#4f46e5;padding:12px 28px;border-radius:8px;font-weight:700;text-decoration:none}
+    nav{margin-bottom:32px}
+    nav a{color:#9ca3af;font-size:14px;margin-right:8px}
+    footer{margin-top:64px;padding-top:24px;border-top:1px solid #e5e7eb;color:#9ca3af;font-size:13px}
+    ol,ul{padding-left:24px}
+    li{margin-bottom:8px}
+    code{background:#f3f4f6;padding:2px 6px;border-radius:4px;font-size:14px}
+  </style>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"HowTo","name":"How to Manage Freelance Clients in Notion","step":[{"@type":"HowToStep","name":"Create your client database","text":"Build a Notion database with key client properties"},{"@type":"HowToStep","name":"Set up project tracking","text":"Link projects to clients with a relation property"},{"@type":"HowToStep","name":"Add invoice tracking","text":"Create an invoice database linked to clients and projects"}]}
+  </script>
+</head>
+<body>
+  <nav><a href="../index.html">← NotionKit Store</a> / <a href="best-notion-templates-freelancers.html">Blog</a></nav>
+
+  <h1>How to Manage Freelance Clients in Notion (Complete Guide)</h1>
+  <p class="meta">March 2026 · 10 min read</p>
+
+  <p>Spreadsheets are chaos. Dedicated CRMs are overkill and expensive. Notion hits the sweet spot: powerful enough to manage a full client roster, simple enough to not require a tutorial every time you open it.</p>
+
+  <p>This guide shows you exactly how to set up a client management system in Notion — from scratch or using our <a href="https://buy.stripe.com/5kQ5kD04p3bpdvr2381wY00">Freelance OS template</a>.</p>
+
+  <div class="highlight">
+    <strong>Skip the setup?</strong> The <a href="https://buy.stripe.com/5kQ5kD04p3bpdvr2381wY00">Freelance OS template</a> (€19) comes fully built with clients, projects, invoices, and pipeline — with realistic sample data so you see exactly how it works. Ready in 5 minutes.
+  </div>
+
+  <h2>What You Need to Track (and Why)</h2>
+  <p>Most freelancers either track too little (just names and emails) or too much (every note, every email, every coffee). The sweet spot:</p>
+  <ul>
+    <li><strong>Client info</strong> — name, email, company, billing rate</li>
+    <li><strong>Status</strong> — active, lead, inactive, VIP</li>
+    <li><strong>Projects</strong> — linked to clients, with deadlines and budgets</li>
+    <li><strong>Invoices</strong> — linked to projects, with payment status</li>
+    <li><strong>Pipeline</strong> — prospects moving toward becoming clients</li>
+  </ul>
+  <p>These 5 databases give you a complete picture of your business without drowning in data.</p>
+
+  <h2>Step-by-Step Setup</h2>
+
+  <div class="step">
+    <div class="step-num">1</div>
+    <h3>Create the Client Database</h3>
+    <p>Start a new Notion page and add a database. Key properties to add:</p>
+    <ul>
+      <li><code>Name</code> — Title (default)</li>
+      <li><code>Email</code> — Email property</li>
+      <li><code>Company</code> — Text</li>
+      <li><code>Status</code> — Select: Active, Lead, Inactive, VIP</li>
+      <li><code>Rate (€/h)</code> — Number, formatted as currency</li>
+      <li><code>Since</code> — Date (when they became a client)</li>
+      <li><code>Notes</code> — Text (payment habits, preferred communication)</li>
+    </ul>
+    <p>Add views: Table view (all clients) + filtered "Active Clients" view + "Leads" view.</p>
+  </div>
+
+  <div class="step">
+    <div class="step-num">2</div>
+    <h3>Add the Projects Database</h3>
+    <p>Create a second database with:</p>
+    <ul>
+      <li><code>Project Name</code> — Title</li>
+      <li><code>Client</code> — Relation (linked to Client database)</li>
+      <li><code>Status</code> — Select: Not Started, In Progress, Review, Done, On Hold</li>
+      <li><code>Budget (€)</code> — Number</li>
+      <li><code>Deadline</code> — Date</li>
+      <li><code>Progress (%)</code> — Number, formatted as percent</li>
+    </ul>
+    <p>Views: Kanban by Status, Table view, filtered "Active Projects" view.</p>
+  </div>
+
+  <div class="step">
+    <div class="step-num">3</div>
+    <h3>Build the Invoice Tracker</h3>
+    <p>Third database:</p>
+    <ul>
+      <li><code>Invoice #</code> — Title (e.g. INV-2026-001)</li>
+      <li><code>Client</code> — Relation</li>
+      <li><code>Amount (€)</code> — Number</li>
+      <li><code>Status</code> — Select: Draft, Sent, Paid, Overdue</li>
+      <li><code>Issue Date</code> and <code>Due Date</code> — Date</li>
+    </ul>
+    <p>Add a filtered "Outstanding" view showing Sent + Overdue. Check this every Friday.</p>
+  </div>
+
+  <div class="step">
+    <div class="step-num">4</div>
+    <h3>Create the Sales Pipeline</h3>
+    <p>For managing leads (future clients):</p>
+    <ul>
+      <li><code>Lead Name</code> — Title</li>
+      <li><code>Stage</code> — Select: New Lead, Contacted, Proposal Sent, Negotiation, Closed Won, Closed Lost</li>
+      <li><code>Value (€)</code> — Number (estimated project value)</li>
+      <li><code>Source</code> — Select: Referral, LinkedIn, Website, etc.</li>
+      <li><code>Follow-up Date</code> — Date</li>
+      <li><code>Next Action</code> — Text</li>
+    </ul>
+    <p>View: Kanban by Stage. Move leads through the pipeline. Review weekly.</p>
+  </div>
+
+  <div class="step">
+    <div class="step-num">5</div>
+    <h3>Build the Dashboard</h3>
+    <p>Create a master page with linked views of each database. Add a few key metrics at the top:</p>
+    <ul>
+      <li>Active clients count</li>
+      <li>Projects in progress</li>
+      <li>Outstanding invoices total</li>
+      <li>Pipeline value</li>
+    </ul>
+    <p>This page becomes your Monday morning ritual — open it, update it, plan your week.</p>
+  </div>
+
+  <h2>The Weekly Review Process (15 min)</h2>
+  <p>Having the system means nothing without a ritual. Every Monday at 9am:</p>
+  <ol>
+    <li>Check Invoices database — any overdue? Follow up same day.</li>
+    <li>Update project progress percentages</li>
+    <li>Move pipeline leads forward (or close the ones going nowhere)</li>
+    <li>Identify your #1 priority client for the week</li>
+  </ol>
+
+  <h2>Common Mistakes to Avoid</h2>
+  <ul>
+    <li><strong>Over-engineering from day one</strong> — Start simple. Add complexity when you feel the need.</li>
+    <li><strong>Not using relations</strong> — Connecting clients → projects → invoices is what makes Notion powerful. Flat databases are just digital paper.</li>
+    <li><strong>Inconsistent status updates</strong> — Update status every time something changes. Stale data is worse than no data.</li>
+    <li><strong>Too many views</strong> — 2-3 views per database is enough. More becomes noise.</li>
+  </ul>
+
+  <div class="cta-box">
+    <h3>Already built for you</h3>
+    <p>The Freelance OS template has all 4 databases pre-configured, linked, and filled with sample data. Add your clients, delete the examples, start managing your business.</p>
+    <a href="https://buy.stripe.com/5kQ5kD04p3bpdvr2381wY00" class="cta-btn">Get Freelance OS — €19 →</a>
+  </div>
+
+  <footer>
+    <p><a href="../index.html">NotionKit Store</a> · <a href="best-notion-templates-freelancers.html">More articles</a> · <a href="mailto:kcc@linfos.net">Contact</a></p>
+  </footer>
+</body>
+</html>
