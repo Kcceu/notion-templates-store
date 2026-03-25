@@ -45,12 +45,12 @@
   <script>
     
 const NOTION_LINKS = {
-  "prod_UDJVRB6faFAnMa": { name: "Freelance OS", emoji: "🚀", url: "PLACEHOLDER_FREELANCE_OS" },
-  "prod_UDJVPGT1zJCMXW": { name: "Finance Tracker Pro", emoji: "💰", url: "PLACEHOLDER_FINANCE" },
-  "prod_UDJVITQV2hEwNT": { name: "Content Creator Hub", emoji: "📅", url: "PLACEHOLDER_CONTENT" },
-  "prod_UDJVengahUGfQo": { name: "Goal & Habit Tracker", emoji: "🎯", url: "PLACEHOLDER_GOAL" },
-  "prod_UDJVEUV0xgwlj3": { name: "Project Manager Pro", emoji: "🏗️", url: "PLACEHOLDER_PROJECT" },
-  "prod_UDJVfBSNUyhAi4": { name: "Second Brain Starter", emoji: "🧠", url: "PLACEHOLDER_BRAIN" },
+  "prod_UDJVRB6faFAnMa": { name: "Freelance OS", emoji: "🚀", url: "https://www.notion.so/32efe774206781d8a803d94bd8f51ff4?duplicate=1" },
+  "prod_UDJVPGT1zJCMXW": { name: "Finance Tracker Pro", emoji: "💰", url: "https://www.notion.so/32efe774206781789755da64ea860e20?duplicate=1" },
+  "prod_UDJVITQV2hEwNT": { name: "Content Creator Hub", emoji: "📅", url: "https://www.notion.so/32efe7742067811a8c63c77627cf5f0c?duplicate=1" },
+  "prod_UDJVengahUGfQo": { name: "Goal & Habit Tracker", emoji: "🎯", url: "https://www.notion.so/32efe7742067811899baf8f492389781?duplicate=1" },
+  "prod_UDJVEUV0xgwlj3": { name: "Project Manager Pro", emoji: "🏗️", url: "https://www.notion.so/32efe7742067815c9a35d4d6d7a63c83?duplicate=1" },
+  "prod_UDJVfBSNUyhAi4": { name: "Second Brain Starter", emoji: "🧠", url: "https://www.notion.so/32efe77420678138b57fe5b7599b64e8?duplicate=1" },
   "prod_UDJVIkt088gKxz": { name: "Complete Bundle", emoji: "🎉", url: "BUNDLE", is_bundle: true }
 };
 
@@ -82,9 +82,9 @@ const BUNDLE_PRODUCTS = [
       `;
 
       for (const prod of products) {
-        const link = prod.url !== "PLACEHOLDER_FREELANCE_OS" &&
+        const link = prod.url !== "https://www.notion.so/32efe774206781d8a803d94bd8f51ff4?duplicate=1" &&
                      !prod.url.startsWith("PLACEHOLDER") &&
-                     prod.url !== "BUNDLE"
+                     true
           ? prod.url : null;
 
         html += `
