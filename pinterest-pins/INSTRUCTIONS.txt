@@ -1,0 +1,92 @@
+PINTEREST UPLOAD — 8 PINS FOR NOTIONKIT
+========================================
+
+Account: Solowodou (jule.wodou@yahoo.fr)
+
+QUICK STEPS:
+1. Go to https://www.pinterest.com/Solowodou/
+2. Click "Create" → "Create Pin"
+3. Upload image (drag-drop or click upload)
+4. Fill in Title + Description (below)
+5. Paste URL destination
+6. Select Board
+7. Click "Save"
+8. Repeat for each pin
+
+===============================================
+
+PIN 03 — GREEN
+Image: pin_03_green.png
+Title: Freelance OS in Notion — Manage Clients, Projects & Invoices
+Description: Complete freelance operating system in Notion. Manage clients, projects, invoices, and pipeline tracking in one place. Free template ready to use. #Notion #Freelance #ProductivitySystem
+URL: https://kcceu.github.io/notion-templates-store/blog/best-notion-templates-freelancers.html
+Board: Notion Templates for Freelancers
+
+===============================================
+
+PIN 04 — VIOLET
+Image: pin_04_violet.png
+Title: Habit Tracker Template — Build Better Habits in Notion
+Description: Free Notion habit tracker template. Track daily habits, build streaks, and connect habits to your goals. Simple, visual, effective. #NotionTemplate #Productivity #HabitBuilding
+URL: https://kcceu.github.io/notion-templates-store/blog/notion-habit-tracker-template.html
+Board: Productivity Systems
+
+===============================================
+
+PIN 05 — PINK
+Image: pin_05_pink.png
+Title: Free Notion Templates Every Freelancer Needs
+Description: Collection of free Notion templates designed for freelancers. Project management, invoicing, client tracking, and more. All templates are ready to use and fully customizable. #Notion #Freelance #Templates
+URL: https://kcceu.github.io/notion-templates-store/blog/free-notion-templates-freelancers.html
+Board: Freelance Organization Tips
+
+===============================================
+
+PIN 06 — TEAL
+Image: pin_06_teal.png
+Title: Project Management Template for Freelancers
+Description: Track projects, deadlines, budgets, and client communication in one Notion database. Free template with full setup guide. Perfect for freelancers managing multiple clients. #Notion #ProjectManagement #Freelance
+URL: https://kcceu.github.io/notion-templates-store/blog/notion-project-management-template.html
+Board: Notion Templates for Freelancers
+
+===============================================
+
+PIN 07 — INDIGO
+Image: pin_07_indigo.png
+Title: Notion Second Brain — Organize Your Entire Life
+Description: Build your personal knowledge management system in Notion. Organize notes, ideas, projects, and goals in one interconnected database. Free template and tutorial included. #Notion #SecondBrain #Productivity
+URL: https://kcceu.github.io/notion-templates-store/
+Board: Productivity Systems
+
+===============================================
+
+PIN 08 — ORANGE
+Image: pin_08_orange.png
+Title: Client Management System in Notion
+Description: Track all client information, projects, invoices, and communication in one place. Free Notion template for freelancers, agencies, and consultants. Never lose a lead again. #Notion #ClientManagement #Business
+URL: https://kcceu.github.io/notion-templates-store/blog/best-notion-templates-freelancers.html
+Board: Freelance Organization Tips
+
+===============================================
+
+PIN 09 — MINT
+Image: pin_09_mint.png
+Title: Productivity System Templates Ready-to-Use
+Description: Pre-built Notion templates for organizing your work, habits, projects, and goals. Everything you need to build a custom productivity system. Free, documented, and designed for real use. #NotionTemplates #Productivity #SystemsDesign
+URL: https://kcceu.github.io/notion-templates-store/blog/notion-project-management-template.html
+Board: Productivity Systems
+
+===============================================
+
+PIN 10 — CORAL
+Image: pin_10_coral.png
+Title: Notion Financial Tracker for Freelancers
+Description: Track invoices, income, expenses, and profits in Notion. Free financial management template built for freelancers and small businesses. Know your numbers, make better decisions. #Notion #Freelance #FinancialTracking
+URL: https://kcceu.github.io/notion-templates-store/blog/notion-invoice-tracker-freelancers.html
+Board: Freelance Organization Tips
+
+===============================================
+
+TIMING: ~5-10 minutes total (30-40 seconds per pin)
+
+Good luck! 🚀
